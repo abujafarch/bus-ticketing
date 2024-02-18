@@ -1,11 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Line</title>
+    <title>Zatayaat</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/ae1eb9a664.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+
+<body class="mx-auto">
+    <header class="max-w-[1175px] mx-auto">
+        <!-- nav section here  -->
+        <section class="flex justify-between items-center mt-12 mb-8">
+            <div class="lg:hidden">
+                <button class="text-xl md:text-2xl text-[#030712]"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div>
+                <h1 class=" text-[28px] md:text-4xl font-extrabold text-[#030712] font-raleway">Zatayaat</h1>
+            </div>
+            <div class="hidden lg:block">
+                <ul class="flex gap-14 text-[#030712b3] font-medium text-lg">
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Destination</li></a>
+                    <a href="#"><li>Search</li></a>
+                </ul>
+            </div>
+            <div>
+                <button class="flex justify-center items-center gap-4 border-[1px] md:px-7 px-5 md:py-3 py-2 border-[#1dd10066] bg-[#1dd1001a] rounded-lg md:rounded-xl">
+                    <p class="text-[#1DD100] font-bold md:text-xl texy-lg">Bus</p>
+                    <img src="images/bus-icon.png" class="border-[1px] border-dashed border-[#1cd1007e]">
+                </button>
+            </div>
+        </section>
+        <!-- banner section here  -->
+        <section>
+            <div class="bg-[url('images/banner.png')] bg-no-repeat bg-cover h-[550px] text-center bg-center rounded-[30px]">
+                <h1 class="lg:text-[64px] md:text-[48px] text-[32px] text-[#FFFFFF] text-center font-raleway font-extrabold mb-4 pt-[74px] md:leading-[80px] leading-10 px-3">End-to-End Travel with <br><span class="text-[#1DD100]">Zatayaat</span></h1>
+                <p class="max-w-[690px] mx-auto text-white leading-7 mb-8 px-3 text-lg font-inter">Now you can purchase ticket with some of click. We are made a solution for bus ticketing system. We just digitalized this.</p>
+                <button class="bg-[#1DD100] md:px-8 px-6 md:py-5 py-4 rounded-lg text-xl font-bold text-black font-raleway">Buy Tickets</button>
+            </div>
+            <div class="flex lg:flex-row flex-col gap-6 justify-center items-center lg:relative bottom-16 lg:mt-0 mt-2">
+                <div class="lg:bg-white bg-[#fafafa] lg:max-w-[308px] px-8 py-9 border-b-4 border-[#1dd100] rounded-3xl flex gap-4 items-center">
+                    <img src="images/people.png" class="border-[1px] border-dashed border-[#1cd1004d]">
+                    <div>
+                        <h2 class="font-inter md:text-4xl text-3xl font-bold">500K+</h2>
+                        <p class="font-inter text-lg text-[#03071299] font-medium">Registered users</p>
+                    </div>
+                </div>
+                <div class="lg:bg-white bg-[#fafafa] max-w-[308px] px-8 py-9 border-b-4 border-[#1dd100] rounded-3xl flex gap-4 items-center">
+                    <img src="images/ticket-cupon.png" class="border-[1px] border-dashed border-[#1cd1004d]">
+                    <div>
+                        <h2 class="font-inter md:text-4xl text-3xl font-bold">1.7 lacks</h2>
+                        <p class="font-inter text-lg text-[#03071299] font-medium">Tickets sold</p>
+                    </div>
+                </div>
+                <div class="lg:bg-white bg-[#fafafa] max-w-[308px] px-8 py-9 border-b-4 border-[#1dd100] rounded-3xl flex gap-4 items-center">
+                    <img src="images/stoppage.png" class="border-[1px] border-dashed border-[#1cd1004d]">
+                    <div>
+                        <h2 class="font-inter md:text-4xl text-3xl font-bold">80K+</h2>
+                        <p class="font-inter text-lg text-[#03071299] font-medium">Rental partners</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="max-w-[1175px] mx-auto">
+        <section>
+            <h1>Best offers for you</h1>
+            <div class="flex lg:flex-row flex-col gap-6">
+                <div class="bg-[#FFBF0F] rounded-3xl flex items-center w-full lg:w-1/2 justify-between">
+                    <div class="py-12 pl-10">
+                        <h2 class="font-inter font-black text-[40px] text-[#030712cc]">15% OFF</h2>
+                        <p class="font-inter font-semibold text-xl text-[#030712cc]">on your next purchase</p>
+                        <p class="text-[#03071280] font-medium text-lg">use by January 2024</p>
+                    </div>
+                    <div class="h-full">
+                        <img class="h-full" src="images/cupon-devider.png">
+                    </div>
+                    <div class="py-12 pr-10">
+                        <h2 class="font-raleway text-[#030712] font-bold text-3xl">NEW15</h2>
+                        <p class="font-raleway text-[#03071266] font-medium text-xl">Coupon Code</p>
+                    </div>
+                </div>
+                <div class="bg-[#F78C9C] rounded-3xl flex items-center justify-between w-full lg:w-1/2">
+                    <div class="py-12 pl-10">
+                        <h2 class="font-inter font-black text-[40px] text-[#030712cc]">20% OFF</h2>
+                        <p class="font-inter font-semibold text-xl text-[#030712cc]">on your next purchase</p>
+                        <p class="text-[#03071280] font-medium text-lg">use by January 2024</p>
+                    </div>
+                    <div class="h-full">
+                        <img class="h-full" src="images/cupon-devider.png">
+                    </div>
+                    <div class="py-12 pr-10">
+                        <h2 class="font-raleway text-[#030712] font-bold text-3xl">Couple 20</h2>
+                        <p class="font-raleway text-[#03071266] font-medium text-xl">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
