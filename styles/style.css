@@ -13,19 +13,29 @@ body{
 }
 
 
-/* header banner section  */
-/* .header-card{
-    background-color: white;
-    max-width: 308px;
-    padding: 36px 32px;
-    border-bottom: 4px solid #1dd100;
-    border-radius: 24px;
-    display: flex;
-    gap: 16px;
-    align-items: center;
-} */
+.seat{
+    padding: 12px;
+    width: 110px;
+    color: #03071280;
+    border-radius: 8px;
+    background-color: #F7F8F8;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+.seat-gate{
+    padding:12px 6px;
+    max-width: 110px;
+    color: #03071280;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+}
 
-
+/* py-3 px-3 w-[110px] rounded-lg bg-[#0307121A] text-center flex justify-center cursor-pointer" */
 
 
 /* media query */
