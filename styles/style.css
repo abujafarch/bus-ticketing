@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bungee+Spice&family=Inter:wght@100..900&family=Josefin+Slab:wght@500&family=Manrope:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-body{
+/* body{
     max-width: 1440px;
     /* color: #03071266; */
-}
+} */
 
 .font-raleway{
     font-family: "Raleway", sans-serif;
@@ -35,23 +35,47 @@ body{
     text-align: center;
 }
 
+
+.seat-table tr th, td{
+    width: 33%;
+}
+.seat-table tr th{
+    padding:0  0 16px;
+    margin-bottom: 12px;
+}
+.seat-table tr td{
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+
+
 /* py-3 px-3 w-[110px] rounded-lg bg-[#0307121A] text-center flex justify-center cursor-pointer" */
+/* <h3>Seat</h3>
+                                        <h3>Class</h3>
+                                        <h3>Price</h3>
+                                        <h3>A1</h3>
+                                        <h3>Economy</h3>
+                                        <h3>550</h3>
+                                        <h3>A2</h3>
+                                        <h3>Economy</h3>
+                                        <h3>550</h3> */
 
 
 /* media query */
 @media only screen and (max-width: 640px) {
-    body {
+    header, .offer-section, .bus-ticket{
       padding:0 10px;
     }
 }
 
 @media only screen and (min-width: 640px) and (max-width: 768px) {
-    body {
+    header, .offer-section , .bus-ticket {
       padding:0 20px;
     }
 }
 @media only screen and (min-width: 768px){
-    body {
+    header, .offer-section, .bus-ticket {
       padding:0 35px;
     }
 }

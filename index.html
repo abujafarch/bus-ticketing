@@ -70,7 +70,7 @@
     </header>
     <main>
         <!-- offer & coupon section here -->
-        <section class="max-w-[1175px] mx-auto">
+        <section class="max-w-[1175px] mx-auto offer-section">
             <h1 class="text-4xl mb-12 font-bold text-[40px] font-raleway text-center mt-14">Best offers for you</h1>
             <div class="flex lg:flex-row flex-col gap-6">
                 <div class="bg-[#FFBF0F] rounded-3xl flex items-center w-full lg:w-1/2 justify-evenly lg:justify-between">
@@ -109,7 +109,7 @@
 
         <!-- bus ticket purchase section here  -->
         <section class="max-w-full mx-auto bg-[#F7F8F8] md:mt-32 mt-10 md:pt-28 pt-10 border-t-[3px] rounded-t-[70px] border-[#1dd100] mb-56">
-            <div class="max-w-[1175px] mx-auto">
+            <div class="max-w-[1175px] mx-auto bus-ticket">
                 <h1 class="font-raleway font-bold md:text-[40px] text-3xl text-center text-[#030712] md:mb-6 mb-3">Zatayaat</h1>
                 <p class="max-w-[736px] text-center mx-auto text-[#03071299] font-normal text-lg md:text-xl pb-12 px-5">Now you can make your more safe. We are offering online ticket purchase for Zatayaat paribahan service. Make your trip safer and enjoyable.</p>
 
@@ -158,16 +158,15 @@
                 </div>
 
                 <div class="bg-white rounded-3xl p-8 mt-7">
-                    <div>
-                        <h3 class="font-raleway font-semibold text-2xl text-[#030712] pb-6 border-b-2 border-dashed">Select Your Seat</h3>
-                        <div class="flex justify-between border-b-2 border-dashed">
-                            <p class="font-medium text-lg text-[#03071280] flex gap-2 py-6"><img src="images/seat-gray.png" class="border-[1px] border-dashed"> Available</p>
-                            <p class="font-medium text-lg text-[#1DD100] flex gap-2 py-6"><img src="images/seat-green-filled.png" class="border-[1px] border-dashed"> Selected</p>
-                        </div>
-                        <!-- seats grid here  -->
-                        <div class="mt-6 flex">
+                    <!-- seats grid here  -->
+                    <div class="mt-6 flex gap-8">
                             <div class="border-r-2 border-dashed pr-6">
-                                <div class="flex justify-end mb-3">
+                                <h3 class="font-raleway font-semibold text-2xl text-[#030712] pb-6 border-b-2 border-dashed">Select Your Seat</h3>
+                                <div class="flex justify-between border-b-2 border-dashed">
+                                    <p class="font-medium text-lg text-[#03071280] flex gap-2 py-6"><img src="images/seat-gray.png" class="border-[1px] border-dashed"> Available</p>
+                                    <p class="font-medium text-lg text-[#1DD100] flex gap-2 py-6"><img src="images/seat-green-filled.png" class="border-[1px] border-dashed"> Selected</p>
+                                </div>
+                                <div class="flex justify-end mb-3 mt-8">
                                     <p class="py-3 px-3 w-[110px] rounded-lg bg-[#0307121A] text-center flex justify-center cursor-pointer"><img src="images/wheel.png" class="w-7"></p>
                                 </div>
                                 <div class="flex items-center gap-6">
@@ -233,13 +232,58 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="pl-6"> 
+                            <div class="flex-1"> 
                                 <h3 class="font-raleway font-semibold text-2xl text-[#030712] pb-6 border-b-2 border-dashed">Select Your Seat</h3>
-                                <div>
-                                    
+                                <div class="bg-[#F7F8F8] rounded-xl p-8  mt-6">
+                                    <div class="">
+                                        <table class="w-full text-left seat-table">
+                                            <tr class="border-b-2 border-dashed font-inter font-medium text-[#030712]">
+                                              <th>Seat <span class="bg-[#1DD100] text-white px-2 rounded-md text-sm">0</span></th>
+                                              <th>Class</th>
+                                              <th class="text-right">Price</th>
+                                            </tr>
+                                            <tr class="font-inter font-medium text-[#03071299]">
+                                              <td>A1</td>
+                                              <td>Economy</td>
+                                              <td class="text-right">550</td>
+                                            </tr>
+                                            <tr class="font-inter font-medium text-[#03071299] border-b-2">
+                                              <td>A2</td>
+                                              <td>Economy</td>
+                                              <td class="text-right">550</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="flex justify-between text-base font-medium text-[#030712] mt-2">
+                                        <h2>Total Price</h2>
+                                        <h2>BDT 1150</h2>
+                                    </div>
+                                    <div class="mt-4 w-full flex justify-between p-3 bg-white rounded-xl">
+                                        <input class="font-inter outline-none text-lg font-medium" type="text" placeholder="Have any coupon?">
+                                        <button class="bg-[#1DD100] px-4 py-2 rounded-lg text-white font-semibold font-inter">Apply</button>
+                                    </div>
+                                    <div class="flex justify-between text-base font-medium text-[#030712] mt-4">
+                                        <h2>Grand Total</h2>
+                                        <h2>BDT 1150</h2>
+                                    </div>
+                                    <div class="mt-5">
+                                        <h3 class="font-inter mb-3 text-base font-semibold">Passenger Name*</h3>
+                                        <input class="w-full p-4 rounded-xl outline-none border-[#dedfe2] border-[1px] font-medium text-lg" type="text" placeholder="Enter your name">
+
+                                        <h3 class="font-inter mt-4 mb-3 text-base font-semibold">Phone Number*</h3>
+                                        <input class="w-full p-4 rounded-xl outline-none border-[#dedfe2] border-[1px] font-medium text-lg" type="tel" placeholder="Enter your phone number">
+
+                                        <h3 class="font-inter mt-4 mb-3 text-base font-semibold">Email ID</h3>
+                                        <input class="w-full p-4 rounded-xl outline-none border-[#dedfe2] border-[1px] font-medium text-lg" type="email" placeholder="Enter your email id">
+
+                                        <button class="w-full bg-[#1DD100] mt-4 rounded-xl py-4 text-white font-semibold text-lg">Next</button>
+                                    </div>
+                                    <div class="mt-4 flex justify-evenly">
+                                        <a href="#" class="underline text-base font-inter font-medium text-[#03071299] underline-offset-4">Terms & Conditions</a>
+                                        <a href="#" class="underline text-base font-inter font-medium text-[#03071299] underline-offset-4">Cancellation Policy</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
