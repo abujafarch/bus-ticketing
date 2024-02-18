@@ -46,7 +46,11 @@
 .seat-table tr td{
     padding-top: 6px;
     padding-bottom: 6px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    color: #03071299;
 }
+
 
 
 

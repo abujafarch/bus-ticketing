@@ -126,7 +126,7 @@
                                 </div>
                             </div>
                             <div>
-                                <button class="flex items-center bg-[#1DD10026] rounded-xl p-4 text-lg font-medium font-inter text-[#1DD100] gap-2"><img src="images/seat-green.png" class="border-[1px] border-dashed border-[#b8b8b8]">40 Seats left</button>
+                                <button class="flex items-center bg-[#1DD10026] rounded-xl p-4 text-lg font-medium font-inter text-[#1DD100] gap-2"><img src="images/seat-green.png" class="border-[1px] border-dashed border-[#b8b8b8]"><span id="seat-left">40</span> Seats left</button>
                             </div>
                         </div>
                         <div class="mt-6 bg-[#F7F8F8] rounded-3xl p-8">
@@ -183,16 +183,16 @@
                                         <p class="seat-gate">J</p>
                                     </div>
                                     <div class=" flex flex-col gap-3">
-                                        <p class="seat">A1</p>
-                                        <p class="seat">B1</p>
-                                        <p class="seat">C1</p>
-                                        <p class="seat">D1</p>
-                                        <p class="seat">E1</p>
-                                        <p class="seat">F1</p>
-                                        <p class="seat">G1</p>
-                                        <p class="seat">H1</p>
-                                        <p class="seat">I1</p>
-                                        <p class="seat">J1</p>
+                                        <p id="a1" class="seat">A1</p>
+                                        <p id="b1" class="seat">B1</p>
+                                        <p id="c1" class="seat">C1</p>
+                                        <p id="d1" class="seat">D1</p>
+                                        <p id="e1" class="seat">E1</p>
+                                        <p id="f1" class="seat">F1</p>
+                                        <p id="g1" class="seat">G1</p>
+                                        <p id="h1" class="seat">H1</p>
+                                        <p id="i1" class="seat">I1</p>
+                                        <p id="j1" class="seat">J1</p>
                                     </div>
                                     <div class=" flex flex-col gap-3">
                                         <p class="seat">A2</p>
@@ -236,35 +236,30 @@
                                 <h3 class="font-raleway font-semibold text-2xl text-[#030712] pb-6 border-b-2 border-dashed">Select Your Seat</h3>
                                 <div class="bg-[#F7F8F8] rounded-xl p-8  mt-6">
                                     <div class="">
-                                        <table class="w-full text-left seat-table">
+                                        <table id="ticket-table" class="w-full text-left seat-table border-b-2">
                                             <tr class="border-b-2 border-dashed font-inter font-medium text-[#030712]">
-                                              <th>Seat <span class="bg-[#1DD100] text-white px-2 rounded-md text-sm">0</span></th>
+                                              <th>Seat <span id="seat-count" class="bg-[#1DD100] text-white px-2 rounded-md text-sm">0</span></th>
                                               <th>Class</th>
                                               <th class="text-right">Price</th>
                                             </tr>
-                                            <tr class="font-inter font-medium text-[#03071299]">
+                                            <!-- <tr>
                                               <td>A1</td>
                                               <td>Economy</td>
                                               <td class="text-right">550</td>
-                                            </tr>
-                                            <tr class="font-inter font-medium text-[#03071299] border-b-2">
-                                              <td>A2</td>
-                                              <td>Economy</td>
-                                              <td class="text-right">550</td>
-                                            </tr>
+                                            </tr> -->
                                         </table>
                                     </div>
                                     <div class="flex justify-between text-base font-medium text-[#030712] mt-2">
                                         <h2>Total Price</h2>
-                                        <h2>BDT 1150</h2>
+                                        <h2>BDT <span id="total-price">0</span></h2>
                                     </div>
                                     <div class="mt-4 w-full flex justify-between p-3 bg-white rounded-xl">
-                                        <input class="font-inter outline-none text-lg font-medium" type="text" placeholder="Have any coupon?">
-                                        <button class="bg-[#1DD100] px-4 py-2 rounded-lg text-white font-semibold font-inter">Apply</button>
+                                        <input id="coupon-input" class="font-inter outline-none text-lg font-medium" type="text" placeholder="Have any coupon?">
+                                        <button id="apply" class="bg-[#1DD100] px-4 py-2 rounded-lg text-white font-semibold font-inter">Apply</button>
                                     </div>
                                     <div class="flex justify-between text-base font-medium text-[#030712] mt-4">
                                         <h2>Grand Total</h2>
-                                        <h2>BDT 1150</h2>
+                                        <h2>BDT <span id="grand-total">0</span></h2>
                                     </div>
                                     <div class="mt-5">
                                         <h3 class="font-inter mb-3 text-base font-semibold">Passenger Name*</h3>
@@ -317,6 +312,9 @@
             </div>
         </section>
     </footer>
+
+    <script src="scripts/common.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
