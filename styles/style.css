@@ -64,7 +64,7 @@
 }
 
 #phone-num{
-    -webkit-appearance: none;
+    appearance: none;
 }
 
 .ticket-title{

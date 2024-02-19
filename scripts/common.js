@@ -72,14 +72,22 @@ function enableNextBtn() {
     phoneNum.addEventListener('keyup', function () {
         if (phoneNum.value.length >= 1) {
             nextBtn.removeAttribute('disabled')
-
-            nextBtn.addEventListener('click', function () {
-                console.log(phoneNum.value.length)
-            })
         }
         else if (phoneNum.value.length == 0) {
             nextBtn.setAttribute('disabled', true)
         }
+    })
+
+    nextBtn.addEventListener('click', function () {
+        const main = document.getElementById('main')
+        const header = document.getElementById('header')
+        const footer = document.getElementById('footer')
+        const modal = document.getElementById('modal')
+
+        main.classList.add('hidden')
+        header.classList.add('hidden')
+        footer.classList.add('hidden')
+        modal.classList.remove('hidden')
     })
 
 }

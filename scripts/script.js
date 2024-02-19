@@ -61,5 +61,4 @@ function buyTickets(){
     const targetSection = document.getElementById('zatayaat')
     const clickBtn = document.getElementById('buy-ticket')
     targetSection.scrollIntoView({behavior: "smooth"})
-    // targetElement.scrollIntoView({ behavior: "smooth" })
 }
