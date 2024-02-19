@@ -54,7 +54,12 @@ function hideApply(){
     applyBtn.classList.add('hidden')
 }
 
-
+function discountAmount(discount){
+    const discountSection = document.getElementById('discount-section')
+    discountSection.classList.remove('hidden')
+    const discountAmount = document.getElementById('discount-amount')
+    discountAmount.innerText = discount;
+}
 
 const couponInputElement = document.getElementById('coupon-input')
 const applyBtn = document.getElementById('apply')
@@ -65,15 +70,22 @@ applyBtn.addEventListener('click', function () {
         const grandTotalElement = document.getElementById('grand-total')
         let grandTotalInt = parseInt(grandTotalElement.innerText)
         let grandTotal = grandTotalInt * 85 / 100
+        let discounted = grandTotalInt*15/100
         grandTotalElement.innerText = grandTotal;
         hideApply()
+        discountAmount(discounted)
     }
-    if (couponInput == 'Couple20') {
+    else if (couponInput == 'Couple20') {
         const grandTotalElement = document.getElementById('grand-total')
         let grandTotalInt = parseInt(grandTotalElement.innerText)
         let grandTotal = grandTotalInt * 80 / 100
+        let discounted = grandTotalInt*20/100
         grandTotalElement.innerText = grandTotal;
         hideApply()
+        discountAmount(discounted)
+    }
+    else{
+        alert('Invalid Coupon. Please input Valid Coupon')
     }
 })
 
