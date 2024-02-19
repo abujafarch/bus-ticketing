@@ -64,7 +64,10 @@
     -webkit-appearance: none;
 }
 
-
+.ticket-title{
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* media query */
 @media only screen and (max-width: 640px) {
@@ -117,6 +120,15 @@
 @media only screen and (min-width: 768px){
     header, .offer-section, .bus-ticket {
       padding:0 35px;
+    }
+}
+
+@media only screen and (max-width: 875px){
+    .ticket-title{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 12px;
     }
 }
 
