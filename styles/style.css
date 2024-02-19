@@ -63,8 +63,13 @@
     color: #03071299;
 }
 
-#phone-num{
+#phone-num::-webkit-inner-spin-button,
+#phone-num::-webkit-outer-spin-button{
     appearance: none;
+    /* margin: 0; */
+}
+#phone-num[type=number]{
+    -moz-appearance: textfield;
 }
 
 .ticket-title{
