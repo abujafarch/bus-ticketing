@@ -30,9 +30,9 @@
                 </ul>
             </div>
             <div>
-                <button class="flex justify-center items-center gap-4 border-[1px] md:px-7 px-5 md:py-3 py-2 border-[#1dd10066] bg-[#1dd1001a] rounded-lg md:rounded-xl">
+                <button class="flex justify-center items-center gap-3 border-[1px] md:px-7 px-5 md:py-3 py-2 border-[#1dd10066] bg-[#1dd1001a] rounded-lg md:rounded-xl">
                     <p class="text-[#1DD100] font-bold md:text-xl texy-lg">Bus</p>
-                    <img src="images/bus-icon.png" class="border-[1px] border-dashed border-[#1cd1007e]">
+                    <img src="images/bus-icon.png">
                 </button>
             </div>
         </section>
@@ -45,21 +45,21 @@
             </div>
             <div class="flex lg:flex-row flex-col gap-6 justify-center items-center lg:relative bottom-16 lg:mt-0 mt-2">
                 <div class="lg:bg-white bg-[#fafafa] w-[308px] px-8 py-9 border-b-4 border-[#1dd100] rounded-3xl flex gap-4 items-center">
-                    <img src="images/people.png" class="border-[1px] border-dashed border-[#1cd1004d]">
+                    <img src="images/people.png">
                     <div>
                         <h2 class="font-inter md:text-4xl text-3xl font-bold">500K+</h2>
                         <p class="font-inter text-lg text-[#03071299] font-medium">Registered users</p>
                     </div>
                 </div>
                 <div class="lg:bg-white bg-[#fafafa] w-[308px] px-8 py-9 border-b-4 border-[#1dd100] rounded-3xl flex gap-4 items-center">
-                    <img src="images/ticket-cupon.png" class="border-[1px] border-dashed border-[#1cd1004d]">
+                    <img src="images/ticket-cupon.png">
                     <div>
                         <h2 class="font-inter md:text-4xl text-3xl font-bold">1.7 lacks</h2>
                         <p class="font-inter text-lg text-[#03071299] font-medium">Tickets sold</p>
                     </div>
                 </div>
                 <div class="lg:bg-white bg-[#fafafa] w-[308px] px-8 py-9 border-b-4 border-[#1dd100] rounded-3xl flex gap-4 items-center">
-                    <img src="images/stoppage.png" class="border-[1px] border-dashed border-[#1cd1004d]">
+                    <img src="images/stoppage.png">
                     <div>
                         <h2 class="font-inter md:text-4xl text-3xl font-bold">80K+</h2>
                         <p class="font-inter text-lg text-[#03071299] font-medium">Rental partners</p>
@@ -113,12 +113,13 @@
                 <h1 class="font-raleway font-bold md:text-[40px] text-3xl text-center text-[#030712] md:mb-6 mb-3">Zatayaat</h1>
                 <p class="max-w-[736px] text-center mx-auto text-[#03071299] font-normal text-lg md:text-xl pb-12 px-5">Now you can make your more safe. We are offering online ticket purchase for Zatayaat paribahan service. Make your trip safer and enjoyable.</p>
 
-                <div class="bg-white rounded-3xl p-8 flex items-center justify-between">
+                <!-- big ticket section (per ticket 550tk) -->
+                <div class="bg-white rounded-3xl p-8 flex items-center justify-between gap-7 relative">
                     <div>
                         <div class="flex items-center justify-between">
                             <div class="flex gap-4 items-center">
                                 <div class="w-100px">
-                                    <img src="images/bus-logo.png" class="w-full border-[1px] border-dashed border-[#b3b3b3]">
+                                    <img src="images/bus-logo.png" class="w-full">
                                 </div>
                                 <div>
                                     <h2 class="font-bold font-raleway text-[32px] text-[#030712 mb-3]">Zatayaat Paribahan</h2>
@@ -126,7 +127,7 @@
                                 </div>
                             </div>
                             <div>
-                                <button class="flex items-center bg-[#1DD10026] rounded-xl p-4 text-lg font-medium font-inter text-[#1DD100] gap-2"><img src="images/seat-green.png" class="border-[1px] border-dashed border-[#b8b8b8]"><span id="seat-left">40</span> Seats left</button>
+                                <button class="flex items-center bg-[#1DD10026] rounded-xl p-4 text-lg font-medium font-inter text-[#1DD100] gap-2"><img src="images/seat-green.png"><span id="seat-left">40</span> Seats left</button>
                             </div>
                         </div>
                         <div class="mt-6 bg-[#F7F8F8] rounded-3xl p-8">
@@ -145,31 +146,33 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="border-2 border-dashed">
+                    <div class="w-20 h-20 bg-[#F7F8F8] rounded-full absolute -top-10 right-[148px]"></div>
+                    <div class="w-20 h-20 bg-[#F7F8F8] rounded-full absolute -bottom-10 right-[148px] z-1"></div>
+                    <!-- <div class="absolute h-full top-0 right-40">
                         <img src="images/info-devider.png">
-                    </div>
+                    </div> -->
 
-                    <div class="flex flex-col items-center">
+                    <div class="flex flex-col items-center justify-center pl-7 border-l-2 border-dashed h-[350px]">
                         <img src="images/fare.png">
                         <h2 class="font-raleway font-bold text-[32px] text-[#030712] text-center">550 Taka</h2>
                         <h2 class="font-raleway font-semibold text-2xl text-[#03071299] text-center">Per Seat</h2>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-3xl p-8 mt-7">
+                <div class="bg-white rounded-3xl p-4 sm:p-8 mt-7 relative z-20">
                     <!-- seats grid here  -->
-                    <div class="mt-6 flex justify-center gap-8">
-                        <div class="border-r-2 border-dashed pr-6">
+                    <div class="mt-6 flex justify-center gap-8 seat-grid-calculation">
+                        <div class="seat-right md:pr-6">
                                 <h3 class="font-raleway font-semibold text-2xl text-[#030712] pb-6 border-b-2 border-dashed">Select Your Seat</h3>
                                 <div class="flex justify-between border-b-2 border-dashed">
-                                    <p class="font-medium text-lg text-[#03071280] flex gap-2 py-6"><img src="images/seat-gray.png" class="border-[1px] border-dashed"> Available</p>
-                                    <p class="font-medium text-lg text-[#1DD100] flex gap-2 py-6"><img src="images/seat-green-filled.png" class="border-[1px] border-dashed"> Selected</p>
+                                    <p class="font-medium text-lg text-[#03071280] flex gap-2 py-6"><img src="images/seat-gray.png"> Available</p>
+                                    <p class="font-medium text-lg text-[#1DD100] flex gap-2 py-6"><img src="images/seat-green-filled.png"> Selected</p>
                                 </div>
                                 <div class="flex justify-end mb-3 mt-8">
-                                    <p class="py-3 px-3 w-[110px] rounded-lg bg-[#0307121A] text-center flex justify-center cursor-pointer"><img src="images/wheel.png" class="w-7"></p>
+                                    <p class="wheel py-3 px-3 w-[110px] rounded-lg bg-[#0307121A] text-center flex justify-center cursor-pointer"><img src="images/wheel.png" class="w-7"></p>
                                 </div>
-                                <div class="flex items-center gap-6">
+                                <!-- seats  -->
+                                <div class="all-seat">
                                     <div class=" flex flex-col gap-3">
                                         <p class="seat-gate">A</p>
                                         <p class="seat-gate">B</p>
@@ -206,7 +209,7 @@
                                         <p class="seat">I2</p>
                                         <p class="seat">J2</p>
                                     </div>
-                                    <div class=" flex flex-col gap-3 ml-10">
+                                    <div class=" flex flex-col gap-3 md:ml-4 xl:ml-10">
                                         <p class="seat">A3</p>
                                         <p class="seat">B3</p>
                                         <p class="seat">C3</p>
@@ -235,6 +238,7 @@
                         <div class="flex-1"> 
                                 <h3 class="font-raleway font-semibold text-2xl text-[#030712] pb-6 border-b-2 border-dashed">Select Your Seat</h3>
                                 <div class="bg-[#F7F8F8] rounded-xl p-8  mt-6">
+                                    <!-- total calculation tables -->
                                     <div class="">
                                         <table id="ticket-table" class="w-full text-left seat-table border-b-2">
                                             <tr class="border-b-2 border-dashed font-inter font-medium text-[#030712]">
@@ -242,11 +246,6 @@
                                               <th>Class</th>
                                               <th class="text-right">Price</th>
                                             </tr>
-                                            <!-- <tr>
-                                              <td>A1</td>
-                                              <td>Economy</td>
-                                              <td class="text-right">550</td>
-                                            </tr> -->
                                         </table>
                                     </div>
                                     <div class="flex justify-between text-base font-medium text-[#030712] mt-2">
@@ -257,8 +256,8 @@
                                         <h2>Discount Amount</h2>
                                         <h2>BDT <span id="discount-amount">0</span></h2>
                                     </div>
-                                    <div id="coupon-section" class="mt-4 w-full flex justify-between p-3 bg-white rounded-xl">
-                                        <input id="coupon-input" class="font-inter outline-none text-lg font-medium" type="text" placeholder="Have any coupon?">
+                                    <div id="coupon-section" class="mt-4 flex w-full justify-between p-3 bg-white rounded-xl">
+                                        <input id="coupon-input" class="max-w-[170px] font-inter outline-none text-lg font-medium" type="text" placeholder="Have any coupon?">
                                         <button id="apply" class="bg-[#1DD100] px-4 py-2 rounded-lg text-white font-semibold font-inter" disabled>Apply</button>
                                     </div>
                                     <div class="flex justify-between text-base font-medium text-[#030712] mt-4">

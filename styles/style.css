@@ -13,6 +13,15 @@
 }
 
 
+.all-seat{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.seat-right{
+    border-right: 2px dashed #e2e2e2;
+}
 .seat{
     padding: 12px;
     width: 110px;
@@ -57,32 +66,92 @@
 
 
 
-/* py-3 px-3 w-[110px] rounded-lg bg-[#0307121A] text-center flex justify-center cursor-pointer" */
-/* <h3>Seat</h3>
-                                        <h3>Class</h3>
-                                        <h3>Price</h3>
-                                        <h3>A1</h3>
-                                        <h3>Economy</h3>
-                                        <h3>550</h3>
-                                        <h3>A2</h3>
-                                        <h3>Economy</h3>
-                                        <h3>550</h3> */
-
-
 /* media query */
 @media only screen and (max-width: 640px) {
     header, .offer-section, .bus-ticket{
       padding:0 10px;
     }
+    .all-seat{
+        gap: 8px;
+    }
+    .seat{
+        padding:10px 8px;
+        width: 50px;
+        border-radius: 6px;
+        font-size: 16px;
+    }
+    .seat-gate{
+        padding:10px 6px;
+        max-width: 50px;
+        font-size: 16px;
+    }
+    .wheel{
+        width: 50px !important;
+        padding:10px 6px !important;
+    }
+
 }
 
 @media only screen and (min-width: 640px) and (max-width: 768px) {
     header, .offer-section , .bus-ticket {
       padding:0 20px;
     }
+
+    .seat{
+        padding:10px 8px;
+        width: 95px;
+        border-radius: 6px;
+        font-size: 16px;
+    }
+    .seat-gate{
+        padding:10px 6px;
+        max-width: 95px;
+        font-size: 16px;
+    }
+    .wheel{
+        width: 95px !important;
+        padding:10px 6px !important;
+    }
 }
+
 @media only screen and (min-width: 768px){
     header, .offer-section, .bus-ticket {
       padding:0 35px;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 992px) {
+    .seat-right{
+        border-right: none;
+    }
+    .seat-grid-calculation{
+        flex-direction: column;
+    }
+    .all-seat{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+    .all-seat{
+        gap: 12px;
+    }
+    
+    .seat{
+        padding:10px 8px;
+        width: 90px;
+        border-radius: 6px;
+        font-size: 16px;
+    }
+    .seat-gate{
+        padding:10px 6px;
+        max-width: 90px;
+        font-size: 16px;
+    }
+
+    .wheel{
+        width: 90px !important;
+        padding:10px 6px !important;
     }
 }
