@@ -49,45 +49,41 @@ function enableApply() {
     applyBtn.removeAttribute('disabled')
 }
 
-function hideApply(){
+function hideApply() {
     const applyBtn = document.getElementById('coupon-section')
     applyBtn.classList.add('hidden')
 }
 
-function discountAmount(discount){
+function discountAmount(discount) {
     const discountSection = document.getElementById('discount-section')
     discountSection.classList.remove('hidden')
     const discountAmount = document.getElementById('discount-amount')
     discountAmount.innerText = discount;
 }
 
-const couponInputElement = document.getElementById('coupon-input')
-const applyBtn = document.getElementById('apply')
-console.log(applyBtn)
-applyBtn.addEventListener('click', function () {
-    const couponInput = couponInputElement.value
-    if (couponInput == 'NEW15') {
-        const grandTotalElement = document.getElementById('grand-total')
-        let grandTotalInt = parseInt(grandTotalElement.innerText)
-        let grandTotal = grandTotalInt * 85 / 100
-        let discounted = grandTotalInt*15/100
-        grandTotalElement.innerText = grandTotal;
-        hideApply()
-        discountAmount(discounted)
+function enableNextBtn() {
+    const nextBtn = document.getElementById('next-btn')
+    const phoneNum = document.getElementById('phone-num')
+    const phoneValue = phoneNum.value;
+
+    if (phoneNum.value.length >= 1) {
+        nextBtn.removeAttribute('disabled')
     }
-    else if (couponInput == 'Couple20') {
-        const grandTotalElement = document.getElementById('grand-total')
-        let grandTotalInt = parseInt(grandTotalElement.innerText)
-        let grandTotal = grandTotalInt * 80 / 100
-        let discounted = grandTotalInt*20/100
-        grandTotalElement.innerText = grandTotal;
-        hideApply()
-        discountAmount(discounted)
-    }
-    else{
-        alert('Invalid Coupon. Please input Valid Coupon')
-    }
-})
+    phoneNum.addEventListener('keyup', function () {
+        if (phoneNum.value.length >= 1) {
+            nextBtn.removeAttribute('disabled')
+
+            nextBtn.addEventListener('click', function () {
+                console.log(phoneNum.value.length)
+            })
+        }
+        else if (phoneNum.value.length == 0) {
+            nextBtn.setAttribute('disabled', true)
+        }
+    })
+
+}
+
 
 
 

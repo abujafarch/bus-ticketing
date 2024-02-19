@@ -41,7 +41,7 @@
             <div class="bg-[url('images/banner.png')] bg-no-repeat bg-cover h-[550px] text-center bg-center rounded-[30px]">
                 <h1 class="lg:text-[64px] md:text-[48px] text-[32px] text-[#FFFFFF] text-center font-raleway font-extrabold mb-4 pt-[74px] md:leading-[80px] leading-10 px-3">End-to-End Travel with <br><span class="text-[#1DD100]">Zatayaat</span></h1>
                 <p class="max-w-[690px] mx-auto text-white leading-7 mb-8 px-3 text-lg font-inter">Now you can purchase ticket with some of click. We are made a solution for bus ticketing system. We just digitalized this.</p>
-                <button class="bg-[#1DD100] md:px-8 px-6 md:py-5 py-4 rounded-lg text-xl font-bold text-black font-raleway">Buy Tickets</button>
+                <button id="buy-ticket" onclick="buyTickets()" class="bg-[#1DD100] md:px-8 px-6 md:py-5 py-4 rounded-lg text-xl font-bold text-black font-raleway">Buy Tickets</button>
             </div>
             <div class="flex lg:flex-row flex-col gap-6 justify-center items-center lg:relative bottom-16 lg:mt-0 mt-2">
                 <div class="lg:bg-white bg-[#fafafa] w-[308px] px-8 py-9 border-b-4 border-[#1dd100] rounded-3xl flex gap-4 items-center">
@@ -108,7 +108,7 @@
         </section>
 
         <!-- bus ticket purchase section here  -->
-        <section class="max-w-full mx-auto bg-[#F7F8F8] md:mt-32 mt-10 md:pt-28 pt-10 border-t-[3px] rounded-t-[70px] border-[#1dd100] pb-[120px]">
+        <section id="zatayaat" class="max-w-full mx-auto bg-[#F7F8F8] md:mt-32 mt-10 md:pt-28 pt-10 border-t-[3px] rounded-t-[70px] border-[#1dd100] pb-[120px]">
             <div class="max-w-[1175px] mx-auto bus-ticket">
                 <h1 class="font-raleway font-bold md:text-[40px] text-3xl text-center text-[#030712] md:mb-6 mb-3">Zatayaat</h1>
                 <p class="max-w-[736px] text-center mx-auto text-[#03071299] font-normal text-lg md:text-xl pb-12 px-5">Now you can make your more safe. We are offering online ticket purchase for Zatayaat paribahan service. Make your trip safer and enjoyable.</p>
@@ -270,12 +270,12 @@
                                         <input class="w-full font-inter p-4 rounded-xl outline-none border-[#dedfe2] border-[1px] font-medium text-lg" type="text" placeholder="Enter your name">
 
                                         <h3 class="font-inter mt-4 mb-3 text-base font-semibold">Phone Number*</h3>
-                                        <input class="w-full font-inter p-4 rounded-xl outline-none border-[#dedfe2] border-[1px] font-medium text-lg" type="tel" placeholder="Enter your phone number">
+                                        <input id="phone-num" class="w-full font-inter p-4 rounded-xl outline-none border-[#dedfe2] border-[1px] font-medium text-lg" type="number" placeholder="Enter your phone number">
 
                                         <h3 class="font-inter mt-4 mb-3 text-base font-semibold">Email ID</h3>
                                         <input class="w-full font-inter p-4 rounded-xl outline-none border-[#dedfe2] border-[1px] font-medium text-lg" type="email" placeholder="Enter your email id">
 
-                                        <button class="w-full bg-[#1DD100] mt-4 rounded-xl py-4 text-white font-semibold text-lg">Next</button>
+                                        <button id="next-btn" disabled="true" class="w-full bg-[#1DD100] mt-4 rounded-xl py-4 text-white font-semibold text-lg">Next</button>
                                     </div>
                                     <div class="mt-4 flex justify-evenly">
                                         <a href="#" class="underline text-base font-inter font-medium text-[#03071299] underline-offset-4">Terms & Conditions</a>
